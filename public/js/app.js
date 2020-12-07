@@ -1,9 +1,3 @@
-console.log('Client side JS');
-
-
-
-
-
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
 let errorMessage = document.getElementById('error');

@@ -50,7 +50,7 @@ app.get('/weather', (req, res) => {
                 })
             }
             //forecast data was destructured
-            weatherstack(latitude, longitude, (error, { name, weather, temperature, feelslike }) => {
+            weatherstack(latitude, longitude, (error, { name, weather, temperature, feelslike, humidity }) => {
 
                 if (error) {
                     return res.send({
@@ -63,7 +63,8 @@ app.get('/weather', (req, res) => {
                     name: name,
                     weather: weather,
                     temperature: temperature,
-                    feelslike: feelslike
+                    feelslike: feelslike,
+                    humidity: humidity
 
 
 

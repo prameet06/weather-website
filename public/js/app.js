@@ -12,7 +12,7 @@ weatherForm.addEventListener('submit', (e) => {
             if (data.error) {
                 errorMessage.innerHTML = data.error;
             } else {
-                successMessage.innerHTML = ` The forecast for ${data.location} is ${data.weather} and temperature is ${data.temperature} `;
+                successMessage.innerHTML = ` The forecast for ${data.location} is ${data.weather} and temperature is ${data.temperature}  and humidity is ${data.humidity}`;
             }
 
         })

@@ -14,7 +14,8 @@ const weatherstack = (latitude, longitude, callback) => {
                 name: body.location.name,
                 weather: body.current.weather_descriptions,
                 temperature: body.current.temperature,
-                feelslike: body.current.feelslike
+                feelslike: body.current.feelslike,
+                humidity: body.current.humidity
 
 
 
